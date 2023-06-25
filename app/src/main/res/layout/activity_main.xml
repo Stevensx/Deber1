@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="86dp"
+        android:layout_height="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="37dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <EditText
+        android:id="@+id/txtNombres"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/borde"
+        android:ems="10"
+        android:hint="Nombres"
+        android:paddingLeft="8dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtApellidos"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/borde"
+        android:ems="10"
+        android:hint="Appelidos"
+        android:inputType="text"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/txtCiudad"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/borde"
+        android:ems="10"
+        android:hint="Ciudad"
+        android:inputType="text"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/txtCelular"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/borde"
+        android:hint="Número de celular"
+        android:inputType="phone"
+        android:paddingLeft="8dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/borde"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="202dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:onClick="btnEnviar"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="202dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:onClick="btnLimpiar"
+        android:text="Limpiar" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGenero"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etFechaNacimiento"
+        android:layout_width="272dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="183dp"
+        android:background="@drawable/borde"
+        android:focusable="false"
+        android:hint="Fecha de Nacimiento"
+        android:paddingLeft="8dp"
+        android:onClick="mostrarDatePickerDialog" />
+</RelativeLayout>
